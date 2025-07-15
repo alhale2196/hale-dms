@@ -3,9 +3,7 @@ services:
   radarr-exporter:
     image: ghcr.io/onedr0p/exportarr:latest
     container_name: radarr-exporter
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "9707:9707"
     environment:

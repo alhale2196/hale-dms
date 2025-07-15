@@ -4,8 +4,6 @@ services:
     image: ghcr.io/linuxserver/prowlarr:develop
     container_name: prowlarr
     restart: unless-stopped
-    networks:
-      - default
     ports:
       - "9696:9696"
     volumes:

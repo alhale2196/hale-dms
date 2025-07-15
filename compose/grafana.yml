@@ -4,8 +4,6 @@ services:
     image: grafana/grafana:latest
     container_name: grafana1
     restart: unless-stopped
-    networks:
-      - default
     ports:
       - "3000:3000"
     user: "$PUID:$PGID"

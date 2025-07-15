@@ -4,8 +4,6 @@ services:
     image: jlesage/jdownloader-2:latest
     container_name: jdownloader
     restart: unless-stopped
-    networks:
-      - default
     # ports:
     #   - "$JDOWNLOADER_PORT:5800"
     volumes:

@@ -4,9 +4,7 @@ services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:develop
     container_name: sonarr
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "8989:8989"
     volumes:

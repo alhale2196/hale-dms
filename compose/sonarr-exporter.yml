@@ -3,9 +3,7 @@ services:
   sonarr-exporter:
     image: ghcr.io/onedr0p/exportarr:latest
     container_name: sonarr-exporter
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "9708:9708"
     environment:

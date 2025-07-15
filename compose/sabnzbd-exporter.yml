@@ -4,8 +4,6 @@ services:
     image: ghcr.io/onedr0p/exportarr:latest
     container_name: sabnzbd-exporter
     restart: "unless-stopped"
-    networks:
-      - default
     ports:
       - "9712:9712"
     environment:

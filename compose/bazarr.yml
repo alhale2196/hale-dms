@@ -3,9 +3,7 @@ services:
   bazarr:
     image: lscr.io/linuxserver/bazarr
     container_name: bazarr
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "6767:6767"
     volumes:

@@ -4,9 +4,7 @@ services:
   lidarr:
     image: lscr.io/linuxserver/lidarr:latest
     container_name: lidarr
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "8686:8686"
     volumes:

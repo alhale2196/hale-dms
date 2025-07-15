@@ -4,8 +4,6 @@ services:
     container_name: node-exporter1
     image: prom/node-exporter:latest
     restart: unless-stopped
-    networks:
-      - default
     ports:
       - "9100:9100"
     volumes:

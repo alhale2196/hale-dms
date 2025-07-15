@@ -5,8 +5,6 @@ services:
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
     restart: unless-stopped
-    networks: 
-      - default
     ports:
       - "8081:8080" # Explosed via gluetun. 8081 because crowdsec is using port 8080
     volumes:

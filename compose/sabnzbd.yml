@@ -6,8 +6,6 @@ services:
     image: lscr.io/linuxserver/sabnzbd:latest
     container_name: sabnzbd
     restart: unless-stopped
-    networks:
-      - default
     ports:
       - "8084:8080"
     volumes:

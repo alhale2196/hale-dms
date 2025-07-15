@@ -3,9 +3,7 @@ services:
   notifiarr:
     image: golift/notifiarr
     container_name: notifiarr
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "5454:5454"
     volumes:

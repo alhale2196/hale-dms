@@ -4,9 +4,7 @@ services:
   tautulli:
     image: lscr.io/linuxserver/tautulli:latest
     container_name: tautulli
-    restart: "no"
-    networks:
-      - default
+    restart: "unless-stopped"
     ports:
       - "8181:8181"
     volumes:
