@@ -1,7 +1,7 @@
 services:
   # Node Exporter - Metrics to Prometheus
   node-exporter:
-    container_name: node-exporter
+    container_name: node-exporter1
     image: prom/node-exporter:latest
     restart: unless-stopped
     networks:

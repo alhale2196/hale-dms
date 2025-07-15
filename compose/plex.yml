@@ -2,7 +2,7 @@ services:
   # Plex - Media Server
   plex:
     image: plexinc/pms-docker:plexpass
-    container_name: plex
+    container_name: plex1
     networks:
       - default
     restart: "no"
