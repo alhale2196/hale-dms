@@ -1,0 +1,20 @@
+networks:
+  default:
+    driver: bridge
+
+include:
+  - compose/influxdb.yml
+  - compose/node-exporter.yml
+  - compose/plex.yml
+  - compose/prometheus.yml
+  - compose/tautulli.yml
+  - compose/bazarr.yml
+  - compose/grafana.yml
+  - compose/jdownloader.yml
+  - compose/lidarr.yml
+  - compose/notifiarr.yml
+  - compose/prowlarr.yml
+  - compose/qbittorrent.yml
+  - compose/radarr.yml
+  - compose/sabnzbd.yml
+  - compose/sonarr.yml

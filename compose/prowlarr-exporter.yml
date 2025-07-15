@@ -1,0 +1,16 @@
+services:
+  # Prowlarr Exporter - Prowlarr metrics for Prometheus
+  prowlarr-exporter:
+    image: ghcr.io/onedr0p/exportarr:latest
+    container_name: prowlarr-exporter
+    restart: unless-stopped
+    networks:
+      - default
+    ports:
+      - "9710:9710"
+    environment:
+      PORT: 9710
+      URL: "http://prowlarr:9696"
+      APIKEY: $PROWLARR_API_KEY
+      ENABLE_ADDITIONAL_METRICS: TRUE
+    command: ["prowlarr"]
