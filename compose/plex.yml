@@ -27,4 +27,4 @@ services:
       HOSTNAME: "hPlex"
       PLEX_UID: $PUID
       PLEX_GID: $PGID
-      PLEX_CLAIM=$PLEX_CLAIM
+      PLEX_CLAIM: $PLEX_CLAIM
