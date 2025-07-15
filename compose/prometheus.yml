@@ -8,7 +8,6 @@ services:
       - "9090:9090"
     volumes:
       - $DOCKERDIR/appdata/prometheus/config:/etc/prometheus
-      - $DOCKERDIR/appdata/prometheus/data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'

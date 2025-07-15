@@ -6,6 +6,3 @@ services:
     restart: unless-stopped
     ports:
       - "8086:8086"
-    volumes:
-      - $DOCKERDIR/appdata/influxdb2/config:/etc/influxdb2
-      - $DOCKERDIR/appdata/influxdb2/db:/var/lib/influxdb2

@@ -7,7 +7,6 @@ services:
     ports:
       - "6767:6767"
     volumes:
-      - $DOCKERDIR/appdata/bazarr:/config
       - $DATADIR/Media:/data/media
     environment:
       TZ: $TZ

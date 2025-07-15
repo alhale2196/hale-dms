@@ -8,7 +8,6 @@ services:
     ports:
       - "8686:8686"
     volumes:
-      - $DOCKERDIR/appdata/lidarr:/config
       - $DATADIR/Media:/data
       - "/etc/localtime:/etc/localtime:ro"
     environment:

@@ -8,7 +8,6 @@ services:
     ports:
       - "8181:8181"
     volumes:
-      - $DOCKERDIR/appdata/tautulli/config:/config
       - $DOCKERDIR/logs/plex:/logs:ro # For ta>
     environment:
       TZ: $TZ

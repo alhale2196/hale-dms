@@ -16,7 +16,6 @@ services:
       - "32414:32414/udp"
       #- "33400:33400/tcp"
     volumes:
-      - $DOCKERDIR/appdata/plex:/config
       - $DATADIR/Media:/data/media
       - $DOCKERDIR/appdata/plex/transcodes:/data/transcode # Offload transcoding to RAM if you have >
       - $DOCKERDIR/logs/plex:/data/logs

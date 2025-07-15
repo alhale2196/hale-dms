@@ -8,7 +8,6 @@ services:
     ports:
       - "7878:7878"
     volumes:
-      - $DOCKERDIR/appdata/radarr:/config
       - $DATADIR/Media/Movies:/data/movies
       - $DATADIR/Media/Downloads:/data/downloads 
       - "/etc/localtime:/etc/localtime:ro"

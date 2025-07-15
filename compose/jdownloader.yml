@@ -8,7 +8,6 @@ services:
     #   - "$JDOWNLOADER_PORT:5800"
     volumes:
       - $DATADIR/Media/Downloads:/data/downloads
-      - $DOCKERDIR/appdata/jdownloader:/config
     environment:
       USER_ID: $PUID
       GROUP_ID: $PGID

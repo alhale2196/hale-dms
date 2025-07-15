@@ -8,7 +8,6 @@ services:
     ports:
       - "8989:8989"
     volumes:
-      - $DOCKERDIR/appdata/sonarr:/config
       - "$DATADIR/Media/TV Shows:/data/TV Shows"
       - $DATADIR/Media/Downloads:/data/downloads 
       - "/etc/localtime:/etc/localtime:ro"
